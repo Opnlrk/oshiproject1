@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background:#2b1055;
+}
+
+header {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.home-content h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background:none;
+  margin-bottom: 200px;
+}
+
+.about1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: none;
+  flex-direction: row-reverse; /* Разместить логотип справа */
+  margin-bottom:1px;
+}
+
+.about-img img {
+  width: 35vw;
+  border-radius: 15%;
+  float: right;
+  
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.about-content {
+  margin-left: 50px;
+  margin-top: -10px;
+  
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+  color: white;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+  color: white;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+  color: white;
+}
+
+.btnn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: #0ef;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem #0ef;
+  font-size: 1.6rem;
+  color: #323946;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s all ease;
+  margin-top: 40px;
+}
+
+.btnn:hover {
+  box-shadow: none;
+}
+
+.about-img-right {
+    float: right; /* Положение изображения справа */
+    margin-left: 20px; /* Расстояние между изображением и текстом */
+}
+
+.gtg {
+  background:#2b1055;
+
+}
+
+
+.wrapper{
+  width: 400px;
+  background: none;
+  border: 2px solid #ff00d2;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  color: white;
+}
+.hed{
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ff00d2;
+  border-radius: 30px;
+  position: relative;
+}
+.hed label{
+  height: 100%;
+  z-index: 2;
+  width: 30%;
+  display: flex;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+#tab-1:checked ~ .hed .tab-1,
+#tab-2:checked ~ .hed .tab-2,
+#tab-3:checked ~ .hed .tab-3{
+  color: #000;
+
+}
+.hed label:nth-child(2){
+  width: 40%;
+}
+.hed .slider{
+  position: absolute;
+  height: 85%;
+  border-radius: inherit;
+  background: #ff00d2;
+  transition: all 0.3s ease;
+}
+#tab-1:checked ~ .hed .slider{
+  left: 0%;
+  width: 90px;
+  transform: translateX(5%);
+}
+#tab-2:checked ~ .hed .slider{
+  left: 50%;
+  width: 120px;
+  transform: translateX(-50%);
+}
+#tab-3:checked ~ .hed .slider{
+  left: 100%;
+  width: 95px;
+  transform: translateX(-105%);
+}
+.wrapper input[type="radio"]{
+  display: none;
+}
+.card-area{
+  overflow: hidden;
+}
+.card-area .cards{
+  display: flex;
+  width: 300%;
+}
+.cards .row{
+  width: 33.4%;
+}
+.cards .row-1{
+  transition: all 0.3s ease;
+}
+#tab-1:checked ~ .card-area .cards .row-1{
+   margin-left: 0%;
+}
+#tab-2:checked ~ .card-area .cards .row-1{
+  margin-left: -33.4%;
+}
+#tab-3:checked ~ .card-area .cards .row-1{
+   margin-left: -66.8%;
+}
+.row .price-details{
+  margin: 20px 0;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ff00d2;
+}
+.price-details .price{
+  font-size: 65px;
+  font-weight: 600;
+  position: relative;
+  font-family: 'Noto Sans', sans-serif;
+}
+.price-details .price::before,
+.price-details .price::after{
+  position: absolute;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.price-details .price::before{
+  
+  left: -13px;
+  top: 17px;
+  font-size: 20px;
+}
+.price-details .price::after{
+  content: "";
+  right: -33px;
+  bottom: 17px;
+  font-size: 13px;
+}
+.price-details p{
+  font-size: 18px;
+  margin-top: 5px;
+}
+.row .features li{
+  display: flex;
+  font-size: 15px;
+  list-style: none;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.features li span{
+  margin-left: 10px;
+}
+.wrapper button{
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+  margin-top: 20px;
+  background: #ff00d2;
+  box-shadow: 0 0 1rem #ff00d2;
+  transition: transform 0.3s ease;
+}
+.wrapper button:hover{
+  transform: scale(0.98);
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoE</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html" class="logo">VideoE</a>
+    </header>
+
+    <section>
+      <video autoplay muted loop class="background-video">
+        <source src="2792967-uhd_2160_1440_25fps.mp4" type="video/mp4">
+        Ваш браузер не підтримує відео.
+      </video>
+      <div class="buttons">
+        <a href="about.html" class="no-underline">
+          <div class="button button1">
+            <img src="aboutUS.png" alt="SEO" class="button-image">
+            <p class="knopka">Про нас</p>
+          </div>
+        </a>
+        <a href="services.html" class="no-underline">
+          <div class="button button2">
+            <img src="services.png" alt="SEO" class="button-image">
+            <p class="knopka">Послуги</p>
+          </div>
+        </a>
+        <a href="portfolio.html" class="no-underline">
+          <div class="button button3">
+            <img src="portfolio.png" alt="SEO" class="button-image">
+            <p class="knopka">Портфолио</p>
+          </div>
+        </a>
+  
+    </section>
+
+    <!-- Dialogflow Messenger -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="VideoEditingBot"
+      agent-id="468d3cf2-dcf7-4938-a5d3-92eeeaae6d1b"
+      language-code="uk"
+    ></df-messenger>
+
+  </body>
+</html>

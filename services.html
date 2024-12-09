@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VideoE</title>
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="stylesheet" href="./services.css" />
+  </head>
+  <body>
+    <div class="opa">
+      <header >
+        <a href="index.html" class="logo">VideoE</a>
+        <ul>
+          <li><a href="index.html" >Дім</a></li>
+        </ul>
+      </header>
+        <section class="about" id="sec1">
+          <div class="wrapper">
+            <input type="radio" name="slider" id="tab-1">
+            <input type="radio" name="slider" id="tab-2" checked>
+            <input type="radio" name="slider" id="tab-3">
+            <div class="hed">
+              <label for="tab-1" class="tab-1">1:1</label>
+              <label for="tab-2" class="tab-2">9:16</label>
+              <label for="tab-3" class="tab-3">16:9</label>
+              <div class="slider"></div>
+            </div>
+            <div class="card-area">
+              <div class="cards">
+                <div class="row row-1">
+                  <div class="price-details">
+                    <span class="price">1:1</span>
+                    <p>Квадратне</p>
+                  </div>
+                  <ul class="features">
+                    <li><i class="fas fa-check"></i><span>Інстаграм</span></li>
+                    <li><i class="fas fa-check"></i><span>Фейсбук</span></li>
+                    <li><i class="fas fa-check"></i><span>ТікТок</span></li>
+                    
+                  </ul>
+                </div>
+                <div class="row">
+                  <div class="price-details">
+                    <span class="price">9:16</span>
+                    <p>Вертикальне</p>
+                  </div>
+                  <ul class="features">
+                     <li><i class="fas fa-check"></i><span>Інстаграм</span></li>
+                    <li><i class="fas fa-check"></i><span>Фейсбук</span></li>
+                    <li><i class="fas fa-check"></i><span>ТікТок</span></li>
+                    <li><i class="fas fa-check"></i><span>Ютуб</span></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <div class="price-details">
+                    <span class="price">16:9</span>
+                    <p>Горизонтальне</p>
+                  </div>
+                  <ul class="features">
+                    <li><i class="fas fa-check"></i><span>Ютуб</span></li>
+                    <li><i class="fas fa-check"></i><span>Vimeo</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a href="https://www.instagram.com/" class="no-underline"><button>Замовити
+            </button></a>
+          </div>
+          <div class="about-content">
+            <h2 class="heading"><span class="span1">Послуги</span></h2>
+            <div class="mg">
+              <p>
+               Ми створюємо відео у різних форматах для будь-яких потреб: квадратні відео для Instagram і Facebook, вертикальні для Instagram Stories, TikTok та YouTube Shorts, а також горизонтальні для YouTube, Vimeo та рекламних роликів. Висока якість та професіоналізм гарантовані для будь-якого формату
+              </p>
+            </div>
+          </div>
+        </section>
+    </div>
+    <!-- Dialogflow Messenger -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="VideoEditingBot"
+      agent-id="468d3cf2-dcf7-4938-a5d3-92eeeaae6d1b"
+      language-code="uk"
+    ></df-messenger>
+  </body>
+</html>
